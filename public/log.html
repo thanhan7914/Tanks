@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+         Tanks Battle - Login.!
+    </title>
+    <link rel='stylesheet' href='public/css/log.css' type='text/css'></limk>
+    <script src='/lib/jquery.min.js'></script>
+</head>
+<body>
+  <form id="msform" name="msform" method='post'>
+
+ <fieldset>
+
+   <h2 class="fs-title">Username:</h2>
+   <input name='name' /><br/>
+   <h2 class="fs-title">Password:</h2>
+   <input name='pass' type="password" /><br/>
+   <input type="submit" class="next action-button" value="Login" />
+
+  </fieldset>
+  </form>
+  <script>
+       $('form').submit(function(){
+            var name=$('input:first').val();
+          if(name.length<=3){
+            alert('Tên nick quá ngắn! ít nhất 4 ký tự.');
+            return false;
+            }
+      });
+  </script>
+ </body>
+ </html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+		    Battle Tanks
+		</title>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/socket.io-1.3.4.js"></script>
+		<link rel='stylesheet' href='css/log.css' type='text/css'></limk>
+		<style>
+		    
+		</style>
+	</head>
+	<body>
+	    <div class="dim"></div>
+        <div class="box">
+		    <div id="msform">
+
+                <fieldset>
+
+                <h2 class="fs-title">Username:</h2>
+				<h4 class="fs-subtitle"></h4>
+                <input name='name' id='login' /><br/>
+                <input type="submit" class="next action-button" value="Attack" />
+
+                </fieldset>
+            </div>
+	    </div>
+	    <canvas id="canvas"></canvas>
+		<div id="container">
+		<div id="close">Chat Live Now</div>
+		<div id="msg">
+		     <div id="message"></div>
+			 chat: [-ping,-clear]
+			 <input type="text" id="tmsg" style="left: 6px; width: 94%; margin: 0px auto;" placeholder="press shift enter" />
+		</div>
+		</div>
+		<p id="copyright">Developed by Thanh An</p>
+		<span id="sound" style="display: none;"></span>
+		<script src="js/Point.js"></script>
+	    <script src="js/game.js"></script>
+	</body>
+</html>

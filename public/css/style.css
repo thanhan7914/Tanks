@@ -1,0 +1,133 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+html {
+	height: 100%;
+	/*Image only BG fallback*/
+	background: url('http://thecodeplayer.com/uploads/media/gs.png');
+	/*background = gradient + image pattern combo*/
+	background: 
+		linear-gradient(rgba(196, 102, 0, 0.2), rgba(155, 89, 182, 0.2)), 
+		url('http://thecodeplayer.com/uploads/media/gs.png');
+}
+
+body {
+    font-family: montserrat, arial, verdana; 
+}
+form { background: #000; padding: 3px; position: fixed; bottom: 0; width: 100%; }
+form input { 
+	border: 0; padding: 10px; width: 90%; margin-right: .5%;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+}
+form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; }
+#messages { list-style-type: none; margin: 0; padding: 0; }
+li {
+	clear: both;
+}
+#left { 
+	float: left; 
+	text-align: left;
+}
+#right {
+    float: right;
+	/*text-align: right;*/
+}
+
+name,#left,#right {
+	background-color: #66ccff;
+	margin: 10px 5px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	min-width: 25%;
+	max-width: 70%;
+	border: 1px solid #66ccff;
+    border-radius: 4px;
+}
+
+#container{
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+
+	box-sizing: border-box;
+	width: 70%;
+	min-height:100%;
+	margin: 0 15%;
+
+	/*stacking fieldsets above each other*/
+	position: absolute;
+}
+
+
+user{
+	display: block;
+	font: 16px;
+	color: green;
+	font-size: large;
+}
+
+time{
+    font-size: x-small;
+    font-color: #808080;
+}
+
+number{
+	display: none;
+}
+
+name{
+	opacity: 0.3;
+	float: left; 
+	text-align: left;
+}
+
+#online{
+	background: white;
+	border: 0 none;
+	/*border-radius: 3px;*/
+	/*box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);*/
+	padding: 20px 30px;
+
+	box-sizing: border-box;
+	width: 13%;
+	min-height:50%;
+	top: 25%;
+	left: 1%;
+	overflow: hidden;
+
+	/*stacking fieldsets above each other*/
+	position: fixed;
+	float: left;
+}
+
+#online li{
+	display: block;
+}
+#x{
+	font-size: x-large;
+	color: green;
+	padding: 10% 10%;
+	top: -4%;
+	left: -6%;
+	position: absolute;
+	cursor: pointer;
+}
+#open{
+	/*background: white;*/
+	border: 0 none;
+	margin: 5px 5px;
+	padding: 5px 4px;
+	display: none;
+    font-size: x-large;
+	color: green;
+	top: 25%;
+	left: 0;
+	position: fixed;
+	cursor: pointer;
+}
